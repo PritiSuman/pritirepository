@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" guice-stage="DEVELOPMENT" name="Failed suite [Intelie Live Application- WMS1 Test Suites]" parallel="tests">
+  <test thread-count="6" name="WMS1_Export Data(failed)" parallel="tests">
+    <classes>
+      <class name="testRunner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="1 3 4"/>
+          <include name="beforeClass"/>
+          <include name="WriteExtentReport"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- testRunner.TestRunner -->
+    </classes>
+  </test> <!-- WMS1_Export Data(failed) -->
+</suite> <!-- Failed suite [Intelie Live Application- WMS1 Test Suites] -->

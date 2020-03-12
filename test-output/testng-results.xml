@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="14" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Intelie Live Application- WMS1 Test Suites" duration-ms="1166669" started-at="2020-03-05T10:14:12Z" finished-at="2020-03-05T10:33:39Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="WMS1_Export Data" duration-ms="1166669" started-at="2020-03-05T10:14:12Z" finished-at="2020-03-05T10:33:39Z">
+      <class name="testRunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.TestRunner@63e2203c]" name="setUpClass" is-config="true" duration-ms="314" started-at="2020-03-05T10:14:12Z" finished-at="2020-03-05T10:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testRunner.TestRunner@63e2203c]" name="beforeClass" is-config="true" duration-ms="30" started-at="2020-03-05T10:14:12Z" finished-at="2020-03-05T10:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="53308" started-at="2020-03-05T10:14:12Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:15:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WMS1_BoreHole Parameter-Red_HoverToFindMnemonics_RegressionTest_11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="76187" started-at="2020-03-05T10:15:06Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:16:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WMS1_BoreHoleParameterRed_HideTrack_ExpandedMode_RegressionTest_05]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [true] but found [false]
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at pageObjects.ScreenCaptureUtilityPage.validateScreenShotWithBaselineImage(ScreenCaptureUtilityPage.java:68)
+at stepDefenitions.ExpandedMode_HideAndDisplayTracks_Step.Expanded_track_one_should_be_hidden_hidden_track(ExpandedMode_HideAndDisplayTracks_Step.java:84)
+at ✽.Then Expanded Track one should be hidden same as normal mode hidden track(WMS1_BoreHoleParameterRed_HideTrack_ExpandedMode_RegressionTest_05.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="70336" started-at="2020-03-05T10:16:22Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:17:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WMS1_BoreHoleParameterRed_HideTrack_NormalMode_RegressionTest_04]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="156637" started-at="2020-03-05T10:17:32Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:20:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WMS1_BoreHoleParameterRed_HideTrack_ExpandedMode_RegressionTest_07]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [true] but found [false]
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at pageObjects.ScreenCaptureUtilityPage.validateScreenShotWithBaselineImage(ScreenCaptureUtilityPage.java:68)
+at stepDefenitions.ExpandedMode_HideAndDisplayTracks_Step.track_one_should_be_visible_at_its_original_place_for_restore_default_setting_for_expanded_Mode(ExpandedMode_HideAndDisplayTracks_Step.java:112)
+at ✽.Then Track one should be visible at its original place for restore default setting for expanded Mode(WMS1_BoreHoleParameterRed_UnHideTrack_ExpandedlMode_RegressionTest_07.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="132833" started-at="2020-03-05T10:20:09Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:22:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WMS1_BoreHoleParameterRed_UnHideTrack_NormalMode_RegressionTest_06]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [true] but found [false]
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at pageObjects.ScreenCaptureUtilityPage.validateScreenShotWithBaselineImage(ScreenCaptureUtilityPage.java:68)
+at stepDefenitions.NormalMode_HideAndDispalyTracks_Steps.track_one_should_be_visible_at_its_original_place_after_pressing_apply_button_at_normal_mode(NormalMode_HideAndDispalyTracks_Steps.java:147)
+at ✽.Then Track one should be visible at its original place after pressing apply button at normal mode(WMS1_BoreHoleParameterRed_UnHideTrack_NormalMode_RegressionTest_06.feature:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="56757" started-at="2020-03-05T10:22:22Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:23:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WMS1_ExportData_ExpandedMode_RegressionTest02_PDF_Format]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="105161" started-at="2020-03-05T10:23:18Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:25:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RegressionTest_01_NormalMode_Export data for WMS1 dashboard in CSV format]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="113013" started-at="2020-03-05T10:25:04Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:26:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RegressionTest_01_NormalMode_Export data for WMS1 dashboard in Excel format]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="106056" started-at="2020-03-05T10:26:57Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:28:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RegressionTest_01_ Export data for WMS1 dashboard in JSON format]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="115383" started-at="2020-03-05T10:28:43Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:30:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RegressionTest_01_NormaMode_Export data for WMS1 dashboard in PDF format]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="49845" started-at="2020-03-05T10:30:38Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:31:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WMS1_LaggedMud-borneMeasurement-Yellow_HoverToFindMnemonics_Track2_RegressionTest_12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="41914" started-at="2020-03-05T10:31:28Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:32:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WMS1_MeasuredDrilling(RigMechanical)Values-Purple_HoverToFindMnemonics_RateOfPentrationInstantenous_RegressionTest_14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="42113" started-at="2020-03-05T10:32:10Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:32:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WMS1_Mud(Drilling Fluid)ParameterandMeasurement-Brown_HoverToFindMnemonics_Track3_RegressionTest_13]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@63e2203c]" name="feature" duration-ms="46317" started-at="2020-03-05T10:32:52Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-05T10:33:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WMS1_RigStateTextWithOPModeTrack_Match_RegressionTest_20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="WriteExtentReport()[pri:0, instance:testRunner.TestRunner@63e2203c]" name="WriteExtentReport" is-config="true" duration-ms="5" started-at="2020-03-05T10:33:38Z" finished-at="2020-03-05T10:33:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WriteExtentReport -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@63e2203c]" name="tearDownClass" is-config="true" duration-ms="298" started-at="2020-03-05T10:33:38Z" finished-at="2020-03-05T10:33:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.TestRunner -->
+    </test> <!-- WMS1_Export Data -->
+  </suite> <!-- Intelie Live Application- WMS1 Test Suites -->
+</testng-results>
